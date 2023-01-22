@@ -13,7 +13,7 @@ class Base {
 		}
 };
 
-class Derived {
+class Derived: public Base {
 	public:
 		void show () {
 			cout << "This is a function from derived class Function name - show()"<< endl;
