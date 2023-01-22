@@ -1,0 +1,4 @@
+# Virtual Functions and Abstract Class
+A virtual function is a member function that is declared as "virtual" in a base class and can be overridden by derived classes. This allows for polymorphic behavior, where a call to a virtual function on a base class reference or pointer can refer to an overridden implementation in a derived class.
+
+An abstract class is a class that contains one or more pure virtual functions. A pure virtual function is a virtual function that has no implementation in the base class, and derived classes are required to provide an implementation for it. An abstract class cannot be instantiated, and it is meant to serve as a base class for other classes.
