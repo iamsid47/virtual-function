@@ -1,8 +1,9 @@
 #include <iostream>
 using namespace std;
 
-class Base {
+class Base {	//abstract class
 	public:
+		//virtual function. the keyword 'virtual' is necessary.
 		virtual void show () {
 			cout << "Virtual function. Function name - show()"<< endl;
 		}
@@ -13,8 +14,9 @@ class Base {
 		}
 };
 
-class Derived: public Base {
+class Derived: public Base {	//not an abstract class, a derived class
 	public:
+		//not virtual function.
 		void show () {
 			cout << "Derived class function. Function name - show()"<< endl;
 		}
@@ -26,8 +28,8 @@ class Derived: public Base {
 };
 
 int main() {
-	Base obj;
-	Derived drobj;
+	Base obj;	//base class object
+	Derived drobj;	//derived class object
 	Base *ptr = &obj;
 	ptr -> show();
 	ptr -> display (10);
